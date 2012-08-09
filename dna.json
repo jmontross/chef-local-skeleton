@@ -1,7 +1,7 @@
 {
     "instance_role":"localMontross",
     "run_list":[
-        "recipe[yourproject::lti-canvas]",
+        "recipe[yourproject::lti-canvas]"
     ]
 }
 
