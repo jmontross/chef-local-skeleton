@@ -7,22 +7,25 @@
 # All rights reserved - Do Not Redistribute
 #
 directory "/opt/awesome" do
-  owner "awesome"
-  group "awesome"
+  owner "vagrant"
   mode 0755
   action :create
 end
 
 directory "/opt/awesome/lti" do
-  owner "awesome"
-  group "awesome"
+  owner "vagrant"
   mode 0755
   action :create
 end
 
 directory "/opt/awesome/lti/video" do
-  owner "awesome"
-  group "awesome"
+  owner "vagrant"
   mode 0755
   action :create
 end
+
+template "/opt/awesome/lti/video/" do
+  source "API_Config.php.erb"
+  mode 0755
+end
+	
