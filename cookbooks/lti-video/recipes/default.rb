@@ -24,7 +24,7 @@ directory "/opt/awesome/lti/video" do
   action :create
 end
 
-template "/opt/awesome/lti/video/" do
+template "/opt/awesome/lti/video/API_Config.php" do
   source "API_Config.php.erb"
   mode 0755
 end
